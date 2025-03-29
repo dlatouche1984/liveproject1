@@ -36,8 +36,8 @@ public class basePage {
         return url;
 
     }
-    public WebElement getCookie() throws IOException {
+    public  WebElement getCookie() throws IOException {
         this.driver = getDriver();
-        return driver.findElement();
+        return null;
     }
 }
