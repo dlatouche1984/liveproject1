@@ -6,9 +6,10 @@ import org.openqa.selenium.WebElement;
 
 
 // This page will list elements we need for the HomePage test
+
 public class homePage {
 
-    // initiate the WebDriver and call it driver
+    // initiate the WebDriver
     public WebDriver driver;
 
     //  We create all WebElements for the homepage to make it easier to refer too
@@ -40,7 +41,10 @@ public class homePage {
     public homePage(WebDriver driver){
         this.driver = driver;
     }
-    // We then use the driver  to create WebElement functions so that we can call for any Test
+
+
+    // We use the driver  to create WebElement METHODS so that we can call for any Test
+
     public WebElement getToggle(){
         return driver.findElement(toggle);
     }
@@ -50,9 +54,7 @@ public class homePage {
     public WebElement accordion() {
         return driver.findElement(accordion);
     }
-    public WebElement browser_Tabs() {
-        return driver.findElement(browser_Tabs);
-    }
+    public WebElement browser_Tabs() {return driver.findElement(browser_Tabs);}
     public WebElement buttons() {
         return driver.findElement(buttons);
     }
@@ -62,9 +64,7 @@ public class homePage {
     public WebElement contact_Us() {
         return driver.findElement(contact_Us);
     }
-    public WebElement date_Picker() {
-        return driver.findElement(date_Picker);
-    }
+    public WebElement date_Picker() {return driver.findElement(date_Picker);}
     public WebElement dropdown_Checkbox_Radio() {
         return driver.findElement(dropdown_Checkbox_Radio);
     }
@@ -82,6 +82,25 @@ public class homePage {
     }
     public WebElement loader_Two() {
         return driver.findElement(loader_Two);
+    }
+    public WebElement login_Portal_test() {
+        return driver.findElement(login_Portal_test);
+    }
+    public WebElement mouse_Movement() {
+        return driver.findElement(mouse_Movement);
+    }
+    public WebElement pop_Up_Alerts() {
+        return driver.findElement(pop_Up_Alerts);
+    }
+    public WebElement predictive_Search() {
+        return driver.findElement(predictive_Search);
+    }
+    public WebElement tables() {return driver.findElement(tables);}
+    public WebElement test_Store() {
+        return driver.findElement(test_Store);
+    }
+    public WebElement about_Me() {
+        return driver.findElement(about_Me);
     }
 }
 
